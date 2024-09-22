@@ -1,4 +1,4 @@
-package org.example.model;
+package feast.model;
 
 import org.springframework.stereotype.Component;
 

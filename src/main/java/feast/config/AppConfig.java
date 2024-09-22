@@ -1,13 +1,13 @@
-package org.example.config;
+package feast.config;
 
-import org.example.TraditionalFeast;
-import org.example.model.*;
+import feast.TraditionalFeast;
+import feast.model.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "feast")
+@ComponentScan("feast")
 public class AppConfig {
 
     @Bean
@@ -21,13 +21,8 @@ public class AppConfig {
     }
 
     @Bean
-    public Duck2 getDuck(Chicken3 chicken) {
-        return new Duck2(chicken);
-    }
-
-    @Bean
-    public Fish1 getFish1(Duck2 duck2) {
-        return new Fish1(duck2);
+    public Duck2 getDuck2(Chicken3 chicken3) {
+        return new Duck2(chicken3);
     }
 
     @Bean
@@ -48,12 +43,5 @@ public class AppConfig {
     @Bean
     public Camel8 getCamel8() {
         return new Camel8();
-    }
-
-    @Bean
-    public TraditionalFeast getTraditionalFeast(Fish1 fish1) {
-        TraditionalFeast feast = new TraditionalFeast();
-        feast.setFish(fish1);
-        return feast;
     }
 }

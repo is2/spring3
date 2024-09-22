@@ -1,4 +1,4 @@
-package org.example.model;
+package feast.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

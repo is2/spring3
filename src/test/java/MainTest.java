@@ -1,5 +1,5 @@
-import org.example.TraditionalFeast;
-import org.example.config.AppConfig;
+import feast.TraditionalFeast;
+import feast.config.AppConfig;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
